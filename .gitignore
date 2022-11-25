@@ -24,4 +24,4 @@ hs_err_pid*
 
 .idea
 out
-resources/constants.json
+src/com/github/snake1byte/reddit_cli_browser/resources/constants.json
