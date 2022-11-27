@@ -25,3 +25,4 @@ hs_err_pid*
 .idea
 out
 src/com/github/snake1byte/reddit_cli_browser/resources/constants.json
+/logs/

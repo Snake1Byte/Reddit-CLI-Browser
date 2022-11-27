@@ -60,7 +60,7 @@ public class Constants {
                     .uri(new URI("https://www.reddit.com/api/v1/access_token"))
                     .header("Authorization", String.format("Basic %s", authorization)).build();
             HttpResponse<String> res = client.send(req, HttpResponse.BodyHandlers.ofString());
-            JsonNode node = mapper.readTree(res.body()); // TODO error handling
+            JsonNode node = mapper.readTree(res.body());
             accessToken = node.get("access_token").asText();
             return accessToken;
         } catch (URISyntaxException ignored) {
